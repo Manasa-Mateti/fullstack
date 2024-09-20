@@ -1,11 +1,11 @@
-/*simple parameters*/
+//simple parameters
 function calculate(a,b)
 {
     console.log(a+b)
 }
 calculate(10,20)
 
-/*using default parameters*/
+//using default parameters
 function calculate(a,b=20)
 {
 
