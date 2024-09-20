@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var UserName=document.myForm.UserName.value;
+            var Password=document.myForm.Password.value;  
+            if(UserName==""&&Password==""){
+                document.write("please enter your username & password")
+            }
+            else if(Password>8){
+                document.write("please enter your password with 8 characters")
+            }
+            else{
+                document.write("your username is: "+UserName);
+               document.write( "  ,your password is:  "+Password);
+            }
+            {
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 style="text-align: center;">Login Page</h2>
+    <form name="myForm" method="post" onsubmit="validate()" >
+Enter UserName: <input type="text" name="UserName" /><br><br>
+Enter Password: <input type="Password" name="Password" /><br><br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
